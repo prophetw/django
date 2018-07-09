@@ -25,7 +25,7 @@ SECRET_KEY = '!5f_^to0&^d0#ow0czr+_u2eb)=s#j2!^sws_i2@6^#rvf+2-8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['prophet-ww.vicp.io']
 
 
 # Application definition
