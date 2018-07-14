@@ -25,7 +25,7 @@ SECRET_KEY = '!5f_^to0&^d0#ow0czr+_u2eb)=s#j2!^sws_i2@6^#rvf+2-8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['prophet-ww.vicp.io']
+ALLOWED_HOSTS = ['prophet-ww.vicp.io','localhost']
 
 
 # Application definition
@@ -52,10 +52,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 
+TEMPLATES_MYSITE_URL = os.path.join(BASE_DIR, 'mysite/templates')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATES_MYSITE_URL],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
